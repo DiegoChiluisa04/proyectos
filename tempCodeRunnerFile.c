@@ -12,7 +12,9 @@ int main(int argc, char *argv[])
     char cedula[50];
 
     printf("**********BIENVENIDO AL SISTEMA DE FACTURACION***********\n");
-
+    printf("1) facturar producto \n");
+    printf("1) imprimir factura \n");
+    printf("1) salir \n");
     printf("Ingrese su nombre: ");
     scanf("%s", &nombre);
     printf("Ingrese su número de cédula: ");

@@ -12,46 +12,25 @@ int main(int argc, char *argv[])
     char cedula[50];
 
     printf("**********BIENVENIDO AL SISTEMA DE FACTURACION***********\n");
-
-    printf("Ingrese su nombre: ");
-    scanf("%s", &nombre);
-    printf("Ingrese su número de cédula: ");
-    scanf("%s", &cedula);
-    printf("Escoja los productos que desea facturar:\n");
-    printf("a) Llantas (Precio: $150)\n");
-    printf("b) Kit Pastillas de freno (Precio: $55)\n");
-    printf("c) Kit de embrague (Precio: $180)\n");
-    printf("d) Faro (Precio: $70)\n");
-    printf("e) Radiador (Precio: $120)\n");
-
-    scanf("%s", &opcion);
+    printf("1) facturar producto \n");
+    printf("2) imprimir factura \n");
+    printf("3) salir \n");
 
     switch (opcion)
     {
-    case 'a' /* constant-expression */:
+    case '1' /* constant-expression */:
         printf("Ingrese la cantidad de Llantas que desea facturar: ");
         scanf("%f", &numa);
         break;
-    case 'b' /* constant-expression */:
+    case '2' /* constant-expression */:
         printf("Ingrese la cantidad de Kit Pastillas de freno que desea facturar: ");
         scanf("%f", &numb);
         break;
-    case 'c' /* constant-expression */:
+    case '3' /* constant-expression */:
         printf("Ingrese la cantidad de Kit de embrague que desea facturar: ");
         scanf("%f", &numc);
         break;
-    case 'd' /* constant-expression */:
-        printf("Ingrese la cantidad de Faro que desea facturar: ");
-        scanf("%f", &numd);
-        break;
-    case 'f' /* constant-expression */:
-        printf("Ingrese la cantidad de Radiador que desea facturar: ");
-        scanf("%f", &nume);
-        break;
-
-    default:
-        printf("la opción elegida no existe ");
-        break;
+    
     }
     tota=numa * prca;
     totb=numb * prcb;
